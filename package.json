@@ -1,0 +1,38 @@
+{
+  "name": "linear-axi",
+  "version": "0.1.0",
+  "description": "Deterministic, token-efficient Linear CLI for agents",
+  "type": "module",
+  "bin": {
+    "linear": "dist/bin/linear.js"
+  },
+  "files": [
+    "dist",
+    "skills",
+    "references",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/bin/linear.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@toon-format/toon": "^2.1.0",
+    "mime-types": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/mime-types": "^3.0.1",
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  },
+  "license": "MIT"
+}
