@@ -3,10 +3,10 @@ import { extractGlobalArgs, parseFlags } from "../src/args.js";
 
 describe("argument parsing", () => {
   it("extracts global flags before or after a command", () => {
-    expect(extractGlobalArgs(["--workspace", "agentdrive", "issues", "--json", "--full"]))
-      .toEqual({ argv: ["issues"], workspace: "agentdrive", json: true, full: true });
-    expect(extractGlobalArgs(["issues", "--workspace=gallopify"]))
-      .toEqual({ argv: ["issues"], workspace: "gallopify", json: false, full: false });
+    expect(extractGlobalArgs(["--workspace", "acme", "issues", "--json", "--full"]))
+      .toEqual({ argv: ["issues"], workspace: "acme", json: true, full: true });
+    expect(extractGlobalArgs(["issues", "--workspace=personal"]))
+      .toEqual({ argv: ["issues"], workspace: "personal", json: false, full: false });
   });
 
   it("collects repeatable flags and rejects unknown flags", () => {

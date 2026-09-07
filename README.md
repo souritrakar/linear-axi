@@ -36,11 +36,11 @@ The CLI resolves credentials in this order:
 Select a persistent default or override one call:
 
 ```sh
-chmod 600 ~/.config/linear-axi/profiles/agentdrive.key
-linear use agentdrive
+chmod 600 ~/.config/linear-axi/profiles/acme.key
+linear use acme
 linear whoami
-linear --workspace gallopify whoami
-linear issues --workspace agentdrive --json
+linear --workspace personal whoami
+linear issues --workspace acme --json
 ```
 
 The key is sent directly in the `Authorization` header. It is never prefixed with `Bearer`, printed, or stored in this repository.
@@ -162,4 +162,4 @@ npm test
 npm run build
 ```
 
-The GraphQL schema is the implementation authority. Input types used by the commands were introspected live before implementation, and the complete Layer 1 surface was exercised against the AgentDrive workspace.
+The GraphQL schema is the implementation authority. Input types used by the commands were introspected live before implementation, and the complete Layer 1 surface was exercised against the Acme workspace.
