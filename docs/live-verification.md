@@ -1,6 +1,6 @@
 # Live verification
 
-Layer 1 was exercised on 2026-09-03/04 against the `agentdrive` Linear organization (team `AGE`). `--workspace gallopify whoami` separately confirmed profile isolation and access to the Gallopify organization.
+Layer 1 was exercised on 2026-09-03/04 against the `acme` Linear organization (team `AGE`). `--workspace personal whoami` separately confirmed profile isolation and access to the Personal organization.
 
 The pass covered:
 

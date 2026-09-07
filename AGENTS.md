@@ -5,7 +5,7 @@ This file is the project's committed home for project-intrinsic agent knowledge:
 - Run `npm run typecheck`, `npm test`, and `npm run build` before shipping changes.
 - [`docs/api-operation-inventory.md`](docs/api-operation-inventory.md) maps the source workflows to CLI commands; keep it current when the command surface changes.
 - [`references/writing-style.md`](references/writing-style.md) is the authority for Linear-bound prose and the markdown/date/upload quirks the workflow skills preserve.
-- Linear input field names must come from live schema introspection rather than memory. Verify changed mutations against the AgentDrive workspace with disposable records.
+- Linear input field names must come from live schema introspection rather than memory. Verify changed mutations against the Acme workspace with disposable records.
 
 ## Maintaining this file
 
