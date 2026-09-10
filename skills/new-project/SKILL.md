@@ -20,7 +20,11 @@ Interview one block at a time. Use only answers and verified facts; unanswered q
 
 Assemble a project name, summary of at most 255 characters, body, named icon and color, lead, target, milestones, and initial issues. Follow `references/writing-style.md` and run `style-check` on every text field. For many dates or choices, collect review through Lavish before writing.
 
-Present everything and wait for explicit approval. Then:
+Present everything and wait for explicit approval.
+
+Creating or redefining a project, its milestones, or its target dates always needs approval; see references/approval-policy.md.
+
+Then:
 
 - Create with `linear create-project --team <team> --name <name> --desc-file <file> [--summary ... --lead ... --target ... --icon ... --color ...]`, or update with `linear update-project <id> ...`.
 - Create confirmed milestones with `linear create-milestone --project <id> --name <name> [--target ... --desc-file ...]`.

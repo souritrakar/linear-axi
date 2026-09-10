@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "postbuild": "chmod +x dist/bin/linear.js",
     "dev": "tsx src/bin/linear.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"

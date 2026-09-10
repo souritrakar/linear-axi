@@ -24,4 +24,8 @@ Resolve the date to ISO and echo it. Ask when missing. Team name, meeting-projec
 
 ## Closeout
 
-Fetch the document and read only Scratchwork to transform. Classify each note as a new issue, update, or assignment. Ask about ambiguity, present all actions, and wait for explicit approval. Apply them with `linear create-issue` and `linear update-issue`. Fetch the document again, then replace the scratch span through `linear patch-doc` using an exact stored anchor and links to the resulting issues.
+Fetch the document and read only Scratchwork to transform. Classify each note as a new issue, update, or assignment. Ask about ambiguity, present all actions, and wait for explicit approval.
+
+Closeout creates issues and changes assignments, so its approval gate always applies; see references/approval-policy.md.
+
+Apply them with `linear create-issue` and `linear update-issue`. Fetch the document again, then replace the scratch span through `linear patch-doc` using an exact stored anchor and links to the resulting issues.
