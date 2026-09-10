@@ -14,6 +14,11 @@ Draft from `$ARGUMENTS`. Ask for a description when it is missing. Default to te
 3. Run `linear projects --team <team>` and choose a project only when the match is clear. If the work has its own finish line and will accumulate issues, route to `new-project`. Ask for a due date; undated is an explicit choice. Compare it with the project target from `linear project <id>`.
 4. Draft a self-contained title and description using `references/writing-style.md`. Do not turn unverified assertions into facts.
 5. Apply the `style-check` skill.
-6. Present the complete draft, team, project, due date, repository link, verification evidence, and likely duplicates. Wait for explicit approval.
+6. Apply `references/approval-policy.md`. When the issue lands in a project and milestone that
+   already exist, step 1 found no plausible duplicate, and the work is already implied by that
+   milestone's agreed scope, create it and report the draft with your result. In every other case —
+   new scope, uncertain placement, an unresolved duplicate, or a date beyond the project target —
+   present the complete draft, team, project, due date, repository link, verification evidence, and
+   likely duplicates, then wait for explicit approval.
 7. Write the approved description to a temporary file and run `linear create-issue --team <team> --title "<title>" --desc-file <file> [--project <id>] [--due YYYY-MM-DD] [--link <repo-url>]`. Do not set an assignee unless requested.
 8. Re-fetch with `linear issue <identifier> --full` and report its URL.

@@ -18,13 +18,7 @@ mkdir -p ~/.local/bin
 ln -s "$(pwd)/dist/bin/linear.js" ~/.local/bin/linear
 ```
 
-If `~/.local/bin` is not on `PATH`, add it in your shell profile. To replace an existing development link deliberately, inspect it first and then use `ln -sfn` with the same paths.
-
-The repository's current development worktree was linked with:
-
-```sh
-ln -s /home/s7kar/.treehouse/linear-axi-ea2ed6/1/linear-axi/dist/bin/linear.js ~/.local/bin/linear
-```
+If `~/.local/bin` is not on `PATH`, add it in your shell profile. To replace an existing development link deliberately, inspect it first and then use `ln -sfn` with the same paths. The symlink must target a permanent checkout, never a temporary or throwaway worktree: `dist/` is gitignored and disappears with that worktree.
 
 ## Authentication and workspaces
 
@@ -139,6 +133,8 @@ The nine judgment workflows live under [`skills/`](skills/). They handle investi
 - `meeting-agenda`
 - `file-embed`
 - `style-check`
+
+Approval behavior is shared across the judgment skills; see [`references/approval-policy.md`](references/approval-policy.md).
 
 Together with the four mechanical commands above, these cover all 13 source workflows. Shared prose rules are in [`references/writing-style.md`](references/writing-style.md). The workflows do not impose a module, milestone, issue, or initiative hierarchy.
 
